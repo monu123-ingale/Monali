@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monali Ingale — Student Portfolio</title>
+  <meta name="description" content="Student portfolio for Monali Ingale — B.Tech AI & DS" />
+  <style>
+    :root{
+      --accent:#0b3d91; /* royal blue */
+      --dark:#0b1320;
+      --muted:#6b7280;
+      --bg:#ffffff;
+      --card:#f8fafc;
+      --radius:14px;
+      --maxw:1100px;
+      --gap:20px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#fff 0%,#f6f8fb 100%);color:var(--dark);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#05103a);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{font-size:22px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav{display:flex;gap:12px}
+    a.btn{padding:10px 14px;border-radius:999px;text-decoration:none;color:var(--accent);border:1px solid rgba(11,61,145,0.12);font-weight:600}
+
+    /* Fixed the gap typo here */
+    main{display:grid;grid-template-columns:1fr 360px;gap:var(--gap);margin-top:20px}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 20px rgba(11,61,145,0.04)}
+
+    /* Left column */
+    .intro{padding:8px}
+    .section{margin-bottom:18px}
+    .section h2{font-size:16px;margin:0 0 8px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#fff;border:1px solid #e6eefc;padding:8px 10px;border-radius:999px;font-size:13px}
+
+    .projects .project{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+    .thumb{width:110px;height:70px;background:#e9eefb;border-radius:8px;flex:0 0 110px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    .proj-meta h3{margin:0;font-size:15px}
+    .proj-meta p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .links a{display:inline-block;margin-right:8px;color:var(--accent);text-decoration:none;font-weight:600;font-size:13px}
+
+    /* Right column */
+    .profile{display:flex;flex-direction:column;gap:12px}
+    .profile .portrait{width:100%;height:200px;border-radius:10px;background:linear-gradient(135deg,#e6f0ff,#ffffff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+    .contact dt{font-weight:700}
+    .contact dd{margin:0 0 8px;color:var(--muted)}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media(max-width:980px){main{grid-template-columns:1fr;}.brand h1{font-size:18px}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">BI</div>
+        <div>
+          <h1> Monali Ingale — B.Tech AI & DS</h1>
+          <p class="lead">I build data-driven projects, AI prototypes and web apps. Passionate about Python, ML and Cloud.</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#skills">Skills</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <!-- Intro / About -->
+        <section class="card intro">
+          <h2>HOME / INTRODUCTION</h2>
+          <p>Hi, I’m <strong> Monali Ingale </strong>. I am a B.Tech Student (AI & DS) at <strong> Zeal college of Engineering</strong> with strong interests in Python, Data Science, Web Development, AI, and Cloud Technologies. I enjoy building projects, solving real-world problems, and continuously improving my technical skills.</p>
+        </section>
+
+        <!-- About me -->
+        <section class="card section">
+          <h2>🧑‍🎓 ABOUT ME</h2>
+          <p><strong>Name:</strong> Monali Ingale<br>
+          <strong>Course:</strong> B.Tech in Artificial Intelligence & Data Science<br>
+          <strong>College:</strong> Zeal college of Enigneering <br>
+          <strong>Year:</strong> Second Year (SY)<br>
+          <strong>Location:</strong> Narhe, Pune<br>
+          <strong>Email:</strong> monuingale2005@gmail.com<br>
+          <strong>Contact No.:</strong> 9631425441</p>
+        </section>
+
+        <!-- Skills -->
+        <section class="card section" id="skills">
+          <h2>⚙️ SKILLS</h2>
+          <div class="section-sub">
+            <h3>Programming Languages</h3>
+            <div class="skills">
+              <div class="chip">Python</div>
+              <div class="chip">C / C++</div>
+              <div class="chip">Java (optional)</div>
+            </div>
+            <h3 style="margin-top:12px">Data & AI Skills</h3>
+            <div class="skills">
+              <div class="chip">Machine Learning (Basics)</div>
+              <div class="chip">Pandas, NumPy</div>
+              <div class="chip">Matplotlib / Power BI</div>
+              <div class="chip">SQL & Databases</div>
+            </div>
+            <h3 style="margin-top:12px">Web & Cloud Skills</h3>
+            <div class="skills">
+              <div class="chip">HTML / CSS</div>
+              <div class="chip">WordPress / Wix</div>
+              <div class="chip">Cloud Basics (AWS / Azure)</div>
+            </div>
+            <h3 style="margin-top:12px">Tools</h3>
+            <div class="skills">
+              <div class="chip">Jupyter Notebook</div>
+              <div class="chip">Git & GitHub</div>
+              <div class="chip">VS Code</div>
+              <div class="chip">Google Colab</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="card section projects" id="projects">
+          <h2>📂 PROJECTS</h2>
+          <div class="project">
+            <div class="thumb">Img</div>
+            <div class="proj-meta">
+              <h3>Project 1: AI-Powered Smart InfoBot</h3>
+              <p>Description: AI-Powered Smart InfoBot is an intelligent information assistant that analyzes text, extracts key insights, generates summaries, answers questions, and organizes content automatically.
+It uses Natural Language Processing (NLP) and machine learning techniques to help users quickly understand large amounts of information.</p>
+              <div class="links"><a href="#">GitHub Repo</a><a href="#">Live Demo</a></div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="thumb">Img</div>
+            <div class="proj-meta">
+              <h3>Project 2: Smart traffic managemnet system</h3>
+              <p>Description:  Is a AI-driven traffic signal system utilizing real-time camera data to dynamically adjust green light timings based on vehicle density.Our solution reduces congestion, improves traffic flow, and enhances safety</p>
+              <div class="links"><a href="#">GitHub Repo</a><a href="#">Live Demo</a></div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Certifications -->
+        <section class="card section">
+          <h2>🏆 CERTIFICATIONS & ACHIEVEMENTS</h2>
+          <ul>
+            <li>Completed Python Basics – HackerRank</li>
+            <li>Completed SQL Intermediate – HackerRank</li>
+            <li>Machine Learning Course – Coursera</li>
+            <li>Participation in Hackathons / Competitions</li>
+            <li>Winner / Participant in College Tech Fest</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- Right column / sidebar -->
+      <aside class="card profile">
+        <div class="portrait">[Profile Photo]</div>
+
+        <section class="contact">
+          <h2>🔗 IMPORTANT LINKS</h2>
+          <dl>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com//monu123-ingale">https://github.com//monu123-ingale </a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/Monali Ingale">https://www.linkedin.com/in/Monali Ingale</a></dd>
+          </dl>
+        </section>
+
+        <section class="card">
+          <h2>📝 RESUME</h2>
+          <p><a class="btn" href="#">Download My Resume (PDF)</a></p>
+        </section>
+
+        <section class="card" id="contact">
+          <h2>📞 CONTACT ME</h2>
+          <p>Email: <a href="mailto: monuingale2005@gmail.com">monuingale2005@gmail.com</a><br>
+          LinkedIn: <a href="#">monuingale2005@gmail.com</a><br>
+          GitHub: <a href="#">https://github.com/monu123-ingale </a></p>
+        </section>
+
+      </aside>
+    </main>
+
+    <footer>
+      © 2025  Monali Ingale | Designed using WordPress / Wix • Made with ❤️ by an aspiring AI & DS Engineer
+      <div style="margin-top:8px">Submission Deadline: <strong>28/11/2025</strong> • Submit via: Google Classroom</div>
+    </footer>
+  </div>
+</body>
+</html>
